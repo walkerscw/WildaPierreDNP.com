@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wilda Pierre, DNP, APRN</title>
+  <meta name="description" content="Clinical Educator • Adjunct Professor • Nurse Practitioner • Speaker • Mentor" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wilda Pierre, DNP, APRN" />
+  <meta property="og:description" content="Clinical Educator • Adjunct Professor • NP • Speaker • Mentor" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      /* Pink-forward + Medical-professional */
+      --bg0:#ffffff;
+      --bg1:#fdf2f8;                 /* blush */
+      --bg2:#f8fafc;                 /* cool light */
+      --card:#ffffff;
+      --card2:#fff7fb;               /* soft pink-tinted surface */
+      --text:#111827;                /* charcoal */
+      --muted:#4b5563;               /* gray */
+      --line:rgba(17,24,39,.12);
+      --accent:#ec4899;              /* PINK (primary) */
+      --accent2:#3b82f6;             /* medical blue (secondary) */
+      --shadow: 0 18px 60px rgba(0,0,0,.10);
+      --radius:18px;
+      --max:1100px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 18% -10%, rgba(236,72,153,.12), transparent 60%),
+        radial-gradient(900px 560px at 100% 12%, rgba(59,130,246,.10), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      line-height:1.55;
+    }
+
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 80px}
+
+    /* NAV */
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:10px 0 22px;
+    }
+    .brand{
+      display:flex; gap:10px; align-items:center;
+      font-weight:850; letter-spacing:.2px;
+    }
+    .mark{
+      width:34px; height:34px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(236,72,153,.92), rgba(59,130,246,.75));
+      box-shadow: 0 10px 25px rgba(236,72,153,.18);
+    }
+    .navlinks{
+      display:flex; gap:14px; flex-wrap:wrap;
+      font-size:13px; color:var(--muted);
+    }
+    .navlinks a{
+      text-decoration:none;
+      padding:6px 8px;
+      border-radius:10px;
+      border:1px solid transparent;
+      opacity:.95;
+    }
+    .navlinks a:hover{
+      opacity:1;
+      border-color:var(--line);
+      background: rgba(236,72,153,.06);
+      color:var(--text);
+    }
+
+    /* HERO */
+    .hero{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      padding:26px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.65));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .badge{
+      display:inline-flex; gap:8px; align-items:center;
+      font-size:12px; color:var(--muted);
+      padding:7px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background: rgba(236,72,153,.06);
+      width:fit-content;
+    }
+    .dot{width:8px; height:8px; border-radius:99px; background:var(--accent)}
+    h1{margin:12px 0 8px; font-size:40px; line-height:1.12}
+    .sub{color:var(--muted); font-size:15px; max-width:62ch}
+
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .btn{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.8);
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:750;
+      font-size:14px;
+      display:inline-flex; align-items:center; gap:10px;
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .btn.primary{
+      background: linear-gradient(90deg, rgba(236,72,153,1), rgba(236,72,153,.82));
+      border-color: rgba(236,72,153,.45);
+      color:#ffffff;
+      box-shadow: 0 12px 28px rgba(236,72,153,.22);
+    }
+    .btn.primary:hover{box-shadow: 0 16px 34px rgba(236,72,153,.28)}
+    .btn.small{padding:8px 12px; font-size:13px; border-radius:11px}
+
+    .heroCard{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: rgba(255,255,255,.75);
+      padding:18px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.06);
+    }
+    .photo{
+      width:100%;
+      aspect-ratio: 4/3;
+      border-radius:14px;
+      border:1px solid rgba(17,24,39,.12);
+      display:flex; align-items:center; justify-content:center;
+      color:rgba(17,24,39,.55);
+      background: linear-gradient(180deg, rgba(236,72,153,.06), rgba(59,130,246,.05));
+      margin-bottom:12px;
+      overflow:hidden;
+    }
+    .photo img{
+      width:100%;
+      height:100%;
+      object-fit:scale-down;   /* looks more premium than scale-down */
+      display:block;
+    }
+    .mini{
+      display:grid; gap:10px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .pill{
+      font-size:12px;
+      padding:7px 10px;
+      border:1px solid rgba(236,72,153,.35);
+      border-radius:999px;
+      background: rgba(236,72,153,.08);
+      color:#7a1b45;
+    }
+
+    /* SECTIONS */
+    .section{margin-top:22px}
+    .sectionHead{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:12px; margin:0 0 10px;
+      position:relative;
+    }
+    .section h2{margin:0; font-size:18px}
+    .sectionHead::after{
+      content:"";
+      display:block;
+      width:56px;
+      height:4px;
+      margin-top:8px;
+      border-radius:999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+    .kicker{margin:0; color:var(--muted); font-size:13px}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+    }
+    .panel{
+      border:1px solid var(--line);
+      background: var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.05);
+    }
+    .panel strong{color:var(--text)}
+    .span-12{grid-column: span 12}
+    .span-8{grid-column: span 8}
+    .span-6{grid-column: span 6}
+    .span-4{grid-column: span 4}
+
+    .panel h3{margin:0 0 6px; font-size:15px}
+    .panel p{margin:0; color:var(--muted); font-size:14px}
+    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+    li{margin:6px 0}
+
+    .note{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:13px;
+      border-left:3px solid var(--accent);
+      padding:10px 10px 10px 12px;
+      background: rgba(236,72,153,.05);
+      border-radius:12px;
+    }
+
+    /* SOCIAL */
+    .socials{
+      display:flex; flex-wrap:wrap; gap:10px; margin-top:12px;
+    }
+    .iconBtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background: rgba(255,255,255,.85);
+      color:var(--muted);
+      font-weight:700;
+      font-size:13px;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .iconBtn:hover{
+      transform: translateY(-1px);
+      background: rgba(236,72,153,.06);
+      border-color: rgba(236,72,153,.25);
+      color:var(--text)
+    }
+    .ic{
+      width:28px; height:28px; border-radius:10px;
+      background: rgba(236,72,153,.15);
+      display:inline-flex; align-items:center; justify-content:center;
+      border:1px solid rgba(236,72,153,.22);
+      font-weight:900; color: rgba(17,24,39,.9);
+    }
+
+    /* FOOTER */
+    .footer{
+      margin-top:22px;
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;
+      color:var(--muted);
+      font-size:12px;
+      opacity:.95;
+      border-top:1px solid var(--line);
+      padding-top:16px;
+    }
+
+    /* Responsive */
+    @media (max-width: 920px){
+      .hero{grid-template-columns: 1fr; padding:20px}
+      h1{font-size:34px}
+    }
+    @media (max-width: 680px){
+      .span-8,.span-6,.span-4{grid-column: span 12}
+      .navlinks{display:none}
+      .sectionHead{flex-direction:column; align-items:flex-start}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- NAV -->
+    <div class="nav">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>Wilda Pierre</div>
+      </div>
+      <div class="navlinks" aria-label="site navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#engagements">Engagements</a>
+        <a href="#social">Social</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div>
+        <div class="badge"><span class="dot"></span> Available for speaking, education, and preceptorship</div>
+        <h1>Wilda Pierre, DNP, APRN</h1>
+        <p class="sub">
+          Clinical Educator • Adjunct Professor • Nurse Practitioner • Speaker • Mentor
+          <br/>Evidence-based education that strengthens clinical confidence, leadership, and patient outcomes.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#contact">Hire Wilda</a>
+          <a class="btn" href="#services">View Services</a>
+          <a class="btn" href="#social">Connect</a>
+        </div>
+
+        <div class="pillrow" aria-label="highlights">
+          <span class="pill">Adult-Gerontology Acute Care NP</span>
+          <span class="pill">Hospital Education & Training</span>
+          <span class="pill">Nursing Faculty</span>
+          <span class="pill">English & Haitian Creole</span>
+        </div>
+      </div>
+
+      <aside class="heroCard">
+        <div class="photo">
+          <img
+            src="images/wilda-clinical-Resized.png"
+            alt="Wilda Pierre, DNP, APRN in clinical setting">
+        </div>
+        <div class="mini">
+          <div><b>Primary Focus:</b> Clinical excellence, nursing education, and mentorship.</div>
+          <div><b>Best For:</b> Nursing programs, hospitals, conferences, and 1:1 coaching.</div>
+          <div><b>Location:</b> Miami, Florida (virtual services available)</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="sectionHead">
+        <h2>Meet Wilda Pierre</h2>
+        <p class="kicker">Professional profile • educator-first • patient-centered</p>
+      </div>
+
+      <div class="grid">
+        <div class="panel span-8">
+          <p>
+            Wilda Pierre is a Doctor of Nursing Practice (DNP) and Adult-Gerontology Acute Care Nurse Practitioner (AG-ACNP)
+            with experience in acute and critical care. She supports nurses and advanced practice students through hands-on
+            training, evidence-based instruction, and mentorship designed to strengthen real-world clinical judgment and patient outcomes.
+          </p>
+          <p style="margin-top:10px;">
+            Known for clear teaching, practical frameworks, and a supportive coaching style, Wilda partners with nursing
+            programs, hospitals, and organizations seeking high-impact education and professional development.
+          </p>
+
+          <div class="note">
+            <b>Languages:</b> English • Haitian Creole • Spanish (conversational understanding)
+          </div>
+        </div>
+
+        <div class="panel span-4">
+          <h3>Quick Snapshot</h3>
+          <ul>
+            <li>Clinical educator & hospital trainer</li>
+            <li>Adjunct nursing faculty</li>
+            <li>NP preceptorship & clinical supervision</li>
+            <li>Speaker for conferences and workshops</li>
+            <li>Mentorship for RN → APRN transitions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="sectionHead">
+        <h2>Services</h2>
+        <p class="kicker">Clear offerings • easy booking • strong outcomes</p>
+      </div>
+
+      <div class="grid">
+        <div class="panel span-6">
+          <h3>🏥 Clinical Educator</h3>
+          <p>Education and training programs that elevate clinical competency and consistency.</p>
+          <ul>
+            <li>Staff education & onboarding support</li>
+            <li>Competency training & skills validation</li>
+            <li>Evidence-based practice workshops</li>
+            <li>Interdisciplinary communication training</li>
+          </ul>
+        </div>
+
+        <div class="panel span-6">
+          <h3>🎓 Adjunct Professor</h3>
+          <p>Faculty support for nursing programs with lecture and clinical instruction.</p>
+          <ul>
+            <li>BSN/MSN/DNP instruction (course-based)</li>
+            <li>Clinical supervision and student evaluation</li>
+            <li>Curriculum development support</li>
+            <li>Academic mentorship & advising</li>
+          </ul>
+        </div>
+
+        <div class="panel span-6">
+          <h3>📝 Clinical Preceptor</h3>
+          <p>NP clinical hour supervision and competency sign-off (program dependent).</p>
+          <ul>
+            <li>NP clinical supervision (AG-ACNP aligned)</li>
+            <li>Structured feedback & professional development</li>
+            <li>Competency sign-off and documentation support</li>
+            <li>Transition-to-practice guidance</li>
+          </ul>
+        </div>
+
+        <div class="panel span-6">
+          <h3>🎤 Speaker & Presenter</h3>
+          <p>High-impact talks and workshops for education, leadership, and resilience.</p>
+          <ul>
+            <li>RN → NP transition & professional identity</li>
+            <li>Clinical judgment in acute care</li>
+            <li>Leadership development for nurses</li>
+            <li>Burnout prevention & resilience</li>
+          </ul>
+        </div>
+
+        <div class="panel span-12">
+          <h3>🤝 Coaching & Mentorship</h3>
+          <p>1:1 or small-group mentorship for nurses and NP students seeking direction and confidence.</p>
+          <ul>
+            <li>RN → APRN transition coaching</li>
+            <li>New NP transition-to-practice support</li>
+            <li>Professional development planning</li>
+            <li>Interview readiness & goal setting (nursing-focused)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO SHE SERVES -->
+    <section class="section" id="audience">
+      <div class="sectionHead">
+        <h2>Who Wilda Works With</h2>
+        <p class="kicker">Schools • hospitals • organizations • individuals</p>
+      </div>
+
+      <div class="grid">
+        <div class="panel span-4">
+          <h3>🏫 Nursing Programs</h3>
+          <p>Adjunct teaching, clinical instruction, curriculum support, student mentorship.</p>
+        </div>
+        <div class="panel span-4">
+          <h3>🏥 Hospitals & Health Systems</h3>
+          <p>Orientation, competency development, workshops, and staff training.</p>
+        </div>
+        <div class="panel span-4">
+          <h3>👩🏾‍⚕️ Nurses & NP Students</h3>
+          <p>Mentorship, coaching, and transition-to-practice guidance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS -->
+    <section class="section" id="engagements">
+      <div class="sectionHead">
+        <h2>Engagements & Professional Inquiries</h2>
+        <p class="kicker">Customized based on scope, audience, and format</p>
+      </div>
+
+      <div class="grid">
+        <div class="panel span-6">
+          <h3>How Engagements Are Structured</h3>
+          <p class="kicker">
+            Services are tailored to meet the needs of institutions, organizations, and individuals. Pricing is discussed
+            after a brief consultation to ensure alignment, clarity, and value.
+          </p>
+
+          <ul>
+            <li>Speaking engagements & workshops</li>
+            <li>Clinical educator consulting & training</li>
+            <li>NP preceptorship & clinical supervision</li>
+            <li>Coaching & professional mentorship</li>
+          </ul>
+
+          <div class="note">
+            Quotes are based on preparation time, format (virtual/in-person), audience size, and timeline.
+          </div>
+        </div>
+
+        <div class="panel span-6">
+          <h3>Contact to Inquire</h3>
+          <p class="kicker">
+            To receive a quote, please include the following details:
+          </p>
+
+          <ul>
+            <li>Service requested</li>
+            <li>Date(s) and time frame</li>
+            <li>Location (in-person or virtual)</li>
+            <li>Audience type and size</li>
+            <li>Topic or learning objectives</li>
+          </ul>
+
+          <div class="cta" style="margin-top:14px;">
+            <a class="btn primary"
+               href="mailto:wilda921@gmail.com?subject=Professional%20Inquiry%20-%20Wilda%20Pierre&body=Hello%20Wilda%2C%0D%0A%0D%0AI%E2%80%99d%20like%20to%20inquire%20about%20your%20services.%0D%0A%0D%0AService%20requested%3A%0D%0ADate(s)%3A%0D%0ALocation%20(in-person%20or%20virtual)%3A%0D%0AAudience%20type%2Fsize%3A%0D%0ATopic%20or%20objectives%3A%0D%0A%0D%0AThank%20you%2C">
+              Contact for Quote
+            </a>
+            <a class="btn" href="#contact">Fast Booking</a>
+          </div>
+        </div>
+
+        <div class="panel span-12">
+          <h3>Community & Student Support</h3>
+          <p class="kicker">
+            Select student-focused and mission-aligned opportunities may be considered based on impact, fit, and availability.
+          </p>
+          <div class="cta" style="margin-top:14px;">
+            <a class="btn primary" href="#contact">Request Consideration</a>
+            <a class="btn" href="#services">Compare Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="section" id="social">
+      <div class="sectionHead">
+        <h2>Connect & Follow</h2>
+        <p class="kicker">Add your official links once handles are secured</p>
+      </div>
+
+      <div class="panel">
+        <p class="kicker" style="margin:0 0 10px;">
+          Professional insights, nursing education, leadership, and mentorship.
+        </p>
+
+        <div class="socials">
+          <a class="iconBtn" href="#" target="_blank" rel="noopener">
+            <span class="ic">in</span> LinkedIn
+          </a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener">
+            <span class="ic">IG</span> Instagram
+          </a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener">
+            <span class="ic">FB</span> Facebook
+          </a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener">
+            <span class="ic">TT</span> TikTok
+          </a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener">
+            <span class="ic">YT</span> YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="sectionHead">
+        <h2>Let’s Work Together</h2>
+        <p class="kicker">Fast inquiries • clear next steps</p>
+      </div>
+
+      <div class="grid">
+        <div class="panel span-8">
+          <h3>Request booking or information</h3>
+          <p>
+            Use the button below to email your request (include date, location/virtual, audience size, and topic).
+          </p>
+
+          <div class="cta" style="margin-top:14px;">
+            <a class="btn primary"
+               href="mailto:wilda921@gmail.com?subject=Inquiry%20for%20Wilda%20Pierre%20(Booking)%20&body=Hello%20Wilda%2C%0D%0A%0D%0AI%E2%80%99d%20like%20to%20inquire%20about%3A%0D%0A-%20Service%20requested%3A%20%0D%0A-%20Preferred%20date%2Ftime%3A%20%0D%0A-%20Location%20(or%20virtual)%3A%20%0D%0A-%20Audience%20type%2Fsize%3A%20%0D%0A-%20Topic%20focus%3A%20%0D%0A%0D%0AThank%20you%2C%0D%0A">
+              Email to Book
+            </a>
+
+            <a class="btn" href="#" target="_blank" rel="noopener">Schedule (Calendly)</a>
+          </div>
+
+          <div class="note" style="margin-top:14px;">
+            <b>Tip:</b> Add a Calendly link here (and on LinkedIn) to reduce back-and-forth.
+          </div>
+        </div>
+
+        <!-- REPLACED: Branding Snapshot removed -->
+   <div class="panel span-4">
+  <h3>Words That Guide the Work</h3>
+  <p class="kicker">Faith • Purpose • Healing</p>
+
+  <p style="margin-top:12px; font-size:15px; font-weight:600; line-height:1.6;">
+    “For I know the plans I have for you,” declares the Lord,  
+    “plans to prosper you and not to harm you,  
+    plans to give you hope and a future.”
+  </p>
+
+  <p style="margin-top:8px; font-size:13px; font-style:italic; color:var(--muted);">
+    — Jeremiah 29:11 (NIV)
+  </p>
+
+  <div class="note" style="margin-top:14px;">
+    A reminder that healing is both a profession and a calling — grounded in faith, compassion,
+    and purposeful service.
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div>© <span id="year"></span> Wilda Pierre • Miami, FL</div>
+      <div>
+        <a href="#top" style="text-decoration:none; border-bottom:1px dashed var(--line);">Back to top ↑</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
