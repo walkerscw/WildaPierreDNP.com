@@ -47,49 +47,65 @@
     .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 80px}
 
     /* NAV */
-    .logo{
-  width:60px;
-  height:60px;
-  object-fit:contain;
+ /* Mobile menu button */
+.menuBtn{
+  display:none;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.70);
+  color: var(--text);
+  padding:10px 12px;
+  border-radius:12px;
+  font-weight:750;
+  font-size:14px;
+  cursor:pointer;
+  line-height:1;
+  box-shadow: 0 10px 26px rgba(0,0,0,.06);
 }
-@media (min-width: 900px){
-  .logo{
-    width:100px;
-    height:100px;
+
+.menuBtn:hover{
+  background: rgba(255,255,255,.90);
+}
+
+/* Mobile nav */
+@media (max-width: 680px){
+  .nav{flex-wrap:wrap;}
+
+  .menuBtn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+
+  /* Hide links by default */
+  .navlinks{
+    display:none;
+    width:100%;
+    margin-top:12px;
+    padding:10px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background: rgba(255,255,255,.75);
+    backdrop-filter: blur(8px);
+  }
+
+  /* Show links when toggled */
+  .navlinks.open{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .navlinks a{
+    width:100%;
+    padding:10px 12px;
+    border-radius:12px;
+  }
+
+  .navlinks a:hover{
+    background: rgba(236,72,153,.08);
+    border-color: transparent;
   }
 }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:10px 0 22px;
-    }
-  .brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-    .mark{
-      width:34px; height:34px; border-radius:12px;
-      background: linear-gradient(135deg, rgba(236,72,153,.92), rgba(59,130,246,.75));
-      box-shadow: 0 10px 25px rgba(236,72,153,.18);
-    }
-    .navlinks{
-      display:flex; gap:14px; flex-wrap:wrap;
-      font-size:13px; color:var(--muted);
-    }
-    .navlinks a{
-      text-decoration:none;
-      padding:6px 8px;
-      border-radius:10px;
-      border:1px solid transparent;
-      opacity:.95;
-    }
-    .navlinks a:hover{
-      opacity:1;
-      border-color:var(--line);
-      background: rgba(236,72,153,.06);
-      color:var(--text);
-    }
-
     /* HERO */
     .hero{
       display:grid;
@@ -289,21 +305,28 @@
   <div class="wrap">
 
     <!-- NAV -->
-    <div class="nav">
-      <div class="brand">
-  <img
-    src="images/wplogodnparnp.png"
-    alt="Wilda Pierre Medical Education & Clinical Excellence"
-    class="logo">
+<div class="nav">
+  <div class="brand">
+    <img
+      src="images/wplogodnparnp.png"
+      alt="Wilda Pierre Medical Education & Clinical Excellence"
+      class="logo">
+  </div>
+
+  <!-- Mobile menu button -->
+  <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">
+    ☰ Menu
+  </button>
+
+  <!-- Navigation links -->
+  <div class="navlinks" id="navlinks" aria-label="site navigation">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#engagements">Engagements</a>
+    <a href="#social">Social</a>
+    <a href="#contact">Contact</a>
+  </div>
 </div>
-      <div class="navlinks" aria-label="site navigation">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#engagements">Engagements</a>
-        <a href="#social">Social</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
 
     <!-- HERO -->
     <section class="hero" id="top">
