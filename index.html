@@ -47,65 +47,113 @@
     .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 80px}
 
     /* NAV */
- /* Mobile menu button */
-.menuBtn{
-  display:none;
-  border:1px solid var(--line);
-  background: rgba(255,255,255,.70);
-  color: var(--text);
-  padding:10px 12px;
-  border-radius:12px;
-  font-weight:750;
-  font-size:14px;
-  cursor:pointer;
-  line-height:1;
-  box-shadow: 0 10px 26px rgba(0,0,0,.06);
-}
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:10px 0 22px;
+    }
 
-.menuBtn:hover{
-  background: rgba(255,255,255,.90);
-}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
 
-/* Mobile nav */
-@media (max-width: 680px){
-  .nav{flex-wrap:wrap;}
+    /* Logo sizing (mobile-first) */
+    .logo{
+      width:44px;
+      height:44px;
+      object-fit:contain;
+      display:block;
+    }
+    @media (min-width: 680px){
+      .logo{ width:52px; height:52px; }
+    }
+    @media (min-width: 900px){
+      .logo{ width:64px; height:64px; }
+    }
 
-  .menuBtn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-  }
+    .navlinks{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .navlinks a{
+      text-decoration:none;
+      padding:6px 8px;
+      border-radius:10px;
+      border:1px solid transparent;
+      opacity:.95;
+    }
+    .navlinks a:hover{
+      opacity:1;
+      border-color:var(--line);
+      background: rgba(236,72,153,.06);
+      color:var(--text);
+    }
 
-  /* Hide links by default */
-  .navlinks{
-    display:none;
-    width:100%;
-    margin-top:12px;
-    padding:10px;
-    border:1px solid var(--line);
-    border-radius:14px;
-    background: rgba(255,255,255,.75);
-    backdrop-filter: blur(8px);
-  }
+    /* Mobile menu button */
+    .menuBtn{
+      display:none;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.70);
+      color: var(--text);
+      padding:10px 12px;
+      border-radius:12px;
+      font-weight:750;
+      font-size:14px;
+      cursor:pointer;
+      line-height:1;
+      box-shadow: 0 10px 26px rgba(0,0,0,.06);
+    }
+    .menuBtn:hover{
+      background: rgba(255,255,255,.90);
+    }
 
-  /* Show links when toggled */
-  .navlinks.open{
-    display:flex;
-    flex-direction:column;
-    gap:6px;
-  }
+    /* Mobile nav */
+    @media (max-width: 680px){
+      .nav{flex-wrap:wrap;}
+      .menuBtn{
+        display:inline-flex;
+        align-items:center;
+        gap:8px;
+      }
 
-  .navlinks a{
-    width:100%;
-    padding:10px 12px;
-    border-radius:12px;
-  }
+      /* Hide links by default */
+      .navlinks{
+        display:none;
+        width:100%;
+        margin-top:12px;
+        padding:10px;
+        border:1px solid var(--line);
+        border-radius:14px;
+        background: rgba(255,255,255,.75);
+        backdrop-filter: blur(8px);
+      }
 
-  .navlinks a:hover{
-    background: rgba(236,72,153,.08);
-    border-color: transparent;
-  }
-}
+      /* Show links when toggled */
+      .navlinks.open{
+        display:flex;
+        flex-direction:column;
+        gap:6px;
+      }
+
+      .navlinks a{
+        width:100%;
+        padding:10px 12px;
+        border-radius:12px;
+      }
+
+      .navlinks a:hover{
+        background: rgba(236,72,153,.08);
+        border-color: transparent;
+      }
+    }
+
     /* HERO */
     .hero{
       display:grid;
@@ -176,7 +224,7 @@
     .photo img{
       width:100%;
       height:100%;
-      object-fit:scale-down;   /* looks more premium than scale-down */
+      object-fit:contain; /* correct for scale-down feel */
       display:block;
     }
     .mini{
@@ -292,10 +340,10 @@
     @media (max-width: 920px){
       .hero{grid-template-columns: 1fr; padding:20px}
       h1{font-size:34px}
+      .sectionHead{flex-direction:column; align-items:flex-start}
     }
     @media (max-width: 680px){
       .span-8,.span-6,.span-4{grid-column: span 12}
-      .navlinks{display:none}
       .sectionHead{flex-direction:column; align-items:flex-start}
     }
   </style>
@@ -305,48 +353,26 @@
   <div class="wrap">
 
     <!-- NAV -->
-<div class="nav">
-  <!-- Logo / Brand -->
-  <div class="brand">
-    <img
-      src="images/wplogodnparnp.png"
-      alt="Wilda Pierre Medical Education & Clinical Excellence"
-      class="logo">
-  </div>
+    <div class="nav">
+      <div class="brand">
+        <img
+          src="images/wplogodnparnp.png"
+          alt="Wilda Pierre Medical Education & Clinical Excellence"
+          class="logo">
+      </div>
 
-  <!-- Mobile Menu Button -->
-  <button
-    class="menuBtn"
-    id="menuBtn"
-    aria-expanded="false"
-    aria-controls="navlinks">
-    ☰ Menu
-  </button>
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">
+        ☰ Menu
+      </button>
 
-  <!-- Navigation Links -->
-  <div class="navlinks" id="navlinks" aria-label="site navigation">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#engagements">Engagements</a>
-    <a href="#social">Social</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-
-  <!-- Mobile menu button -->
-  <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">
-    ☰ Menu
-  </button>
-
-  <!-- Navigation links -->
-  <div class="navlinks" id="navlinks" aria-label="site navigation">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#engagements">Engagements</a>
-    <a href="#social">Social</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
+      <div class="navlinks" id="navlinks" aria-label="site navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#engagements">Engagements</a>
+        <a href="#social">Social</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
 
     <!-- HERO -->
     <section class="hero" id="top">
@@ -587,21 +613,11 @@
         </p>
 
         <div class="socials">
-          <a class="iconBtn" href="#" target="_blank" rel="noopener">
-            <span class="ic">in</span> LinkedIn
-          </a>
-          <a class="iconBtn" href="#" target="_blank" rel="noopener">
-            <span class="ic">IG</span> Instagram
-          </a>
-          <a class="iconBtn" href="#" target="_blank" rel="noopener">
-            <span class="ic">FB</span> Facebook
-          </a>
-          <a class="iconBtn" href="#" target="_blank" rel="noopener">
-            <span class="ic">TT</span> TikTok
-          </a>
-          <a class="iconBtn" href="#" target="_blank" rel="noopener">
-            <span class="ic">YT</span> YouTube
-          </a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">in</span> LinkedIn</a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">IG</span> Instagram</a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">FB</span> Facebook</a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">TT</span> TikTok</a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">YT</span> YouTube</a>
         </div>
       </div>
     </section>
@@ -634,26 +650,25 @@
           </div>
         </div>
 
-        <!-- REPLACED: Branding Snapshot removed -->
-   <div class="panel span-4">
-  <h3>Words That Guide the Work</h3>
-  <p class="kicker">Faith • Purpose • Healing</p>
+        <div class="panel span-4">
+          <h3>Words That Guide the Work</h3>
+          <p class="kicker">Faith • Purpose • Healing</p>
 
-  <p style="margin-top:12px; font-size:15px; font-weight:600; line-height:1.6;">
-    “For I know the plans I have for you,” declares the Lord,  
-    “plans to prosper you and not to harm you,  
-    plans to give you hope and a future.”
-  </p>
+          <p style="margin-top:12px; font-size:15px; font-weight:700; line-height:1.6;">
+            “For I know the plans I have for you,” declares the Lord,  
+            “plans to prosper you and not to harm you,  
+            plans to give you hope and a future.”
+          </p>
 
-  <p style="margin-top:8px; font-size:13px; font-style:italic; color:var(--muted);">
-    — Jeremiah 29:11 (NIV)
-  </p>
+          <p style="margin-top:8px; font-size:13px; font-style:italic; color:var(--muted);">
+            — Jeremiah 29:11 (NIV)
+          </p>
 
-  <div class="note" style="margin-top:14px;">
-    A reminder that healing is both a profession and a calling — grounded in faith, compassion,
-    and purposeful service.
-  </div>
-</div>
+          <div class="note" style="margin-top:14px;">
+            A reminder that healing is both a profession and a calling — grounded in faith, compassion,
+            and purposeful service.
+          </div>
+        </div>
       </div>
     </section>
 
@@ -668,7 +683,25 @@
   </div>
 
   <script>
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const navlinks = document.getElementById("navlinks");
+
+    menuBtn.addEventListener("click", () => {
+      const open = navlinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(open));
+    });
+
+    // Close menu after tapping a link (mobile)
+    navlinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navlinks.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
   </script>
 </body>
 </html>
