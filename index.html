@@ -1,719 +1,160 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Wilda Pierre, DNP, APRN | Medical Education & Clinical Excellence</title>
-  <meta name="description" content="Wilda Pierre, DNP, APRN is a medical educator and nurse practitioner specializing in medical education, clinical excellence, and professional training." />
-
-<!-- Open Graph / Social Sharing -->
-<meta property="og:title" content="Wilda Pierre, DNP, APRN | Medical Education & Clinical Excellence" />
-<meta property="og:description" content="Medical educator and nurse practitioner specializing in clinical education, healthcare leadership, and professional training." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://wildapierrednp.com" />
-<meta property="og:image" content="https://wildapierrednp.com/images/wplogodnparnp.png" />
-
-  <style>
-    :root{
-      /* Pink-forward + Medical-professional */
-      --bg0:#ffffff;
-      --bg1:#fdf2f8;                 /* blush */
-      --bg2:#f8fafc;                 /* cool light */
-      --card:#ffffff;
-      --card2:#fff7fb;               /* soft pink-tinted surface */
-      --text:#111827;                /* charcoal */
-      --muted:#4b5563;               /* gray */
-      --line:rgba(17,24,39,.12);
-      --accent:#ec4899;              /* PINK (primary) */
-      --accent2:#3b82f6;             /* medical blue (secondary) */
-      --shadow: 0 18px 60px rgba(0,0,0,.10);
-      --radius:18px;
-      --max:1100px;
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 700px at 18% -10%, rgba(236,72,153,.12), transparent 60%),
-        radial-gradient(900px 560px at 100% 12%, rgba(59,130,246,.10), transparent 55%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-      line-height:1.55;
-    }
-
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 80px}
-
-    /* NAV */
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      padding:10px 0 22px;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
-
-    /* Logo sizing (mobile-first) */
-    .logo{
-      width:44px;
-      height:44px;
-      object-fit:contain;
-      display:block;
-    }
-    @media (min-width: 680px){
-      .logo{ width:52px; height:52px; }
-    }
-    @media (min-width: 900px){
-      .logo{ width:64px; height:64px; }
-    }
-
-    .navlinks{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      font-size:13px;
-      color:var(--muted);
-    }
-    .navlinks a{
-      text-decoration:none;
-      padding:6px 8px;
-      border-radius:10px;
-      border:1px solid transparent;
-      opacity:.95;
-    }
-    .navlinks a:hover{
-      opacity:1;
-      border-color:var(--line);
-      background: rgba(236,72,153,.06);
-      color:var(--text);
-    }
-
-    /* Mobile menu button */
-    .menuBtn{
-      display:none;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.70);
-      color: var(--text);
-      padding:10px 12px;
-      border-radius:12px;
-      font-weight:750;
-      font-size:14px;
-      cursor:pointer;
-      line-height:1;
-      box-shadow: 0 10px 26px rgba(0,0,0,.06);
-    }
-    .menuBtn:hover{
-      background: rgba(255,255,255,.90);
-    }
-
-    /* Mobile nav */
-    @media (max-width: 680px){
-      .nav{flex-wrap:wrap;}
-      .menuBtn{
-        display:inline-flex;
-        align-items:center;
-        gap:8px;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Wilda Pierre | Nursing Education, NCLEX & Mentorship</title>
+  <meta name="description" content="Dr. Wilda Pierre, DNP, APRN, ACNPC-AG: nursing education, NCLEX preparation, clinical preceptorship, mentorship and speaking in Miami and virtually.">
+  <link rel="canonical" href="https://wildapierrednp.com/">
+  <meta name="theme-color" content="#702b49">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dr. Wilda Pierre — Teach. Lead. Heal.">
+  <meta property="og:description" content="Nursing education, NCLEX preparation and mentorship grounded in clinical excellence, compassion and community.">
+  <meta property="og:url" content="https://wildapierrednp.com/">
+  <meta property="og:image" content="https://wildapierrednp.com/images/wplogodnparnp.png">
+  <meta property="og:image:alt" content="Wilda Pierre medical education emblem">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/wp-medallion.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://wildapierrednp.com/#dr-wilda-pierre",
+      "name": "Wilda Pierre",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "DNP, APRN, ACNPC-AG",
+      "url": "https://wildapierrednp.com/",
+      "image": "https://wildapierrednp.com/images/dr-wilda-pierre-portrait.jpg",
+      "jobTitle": [
+        "Adult-Gerontology Acute Care Nurse Practitioner",
+        "Clinical Educator",
+        "Nursing Faculty",
+        "Speaker",
+        "Mentor"
+      ],
+      "description": "Dr. Wilda Pierre provides nursing education, NCLEX preparation, mentorship, clinical preceptorship and speaking in Miami, Florida, and virtually.",
+      "sameAs": [
+        "https://www.linkedin.com/in/wildapierrednp/",
+        "https://www.instagram.com/childofgod2004/",
+        "https://www.facebook.com/share/1DMZ7DeaRK/",
+        "https://www.tiktok.com/@childofgod2004"
+      ],
+      "knowsAbout": [
+        "Nursing education",
+        "NCLEX preparation",
+        "Clinical judgment",
+        "Clinical preceptorship",
+        "Nursing mentorship",
+        "Nursing leadership"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Capella University"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Walden University"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Grand Canyon University"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://wildapierrednp.com/#website",
+      "url": "https://wildapierrednp.com/",
+      "name": "Dr. Wilda Pierre — Teach. Lead. Heal.",
+      "publisher": {
+        "@id": "https://wildapierrednp.com/#dr-wilda-pierre"
       }
-
-      /* Hide links by default */
-      .navlinks{
-        display:none;
-        width:100%;
-        margin-top:12px;
-        padding:10px;
-        border:1px solid var(--line);
-        border-radius:14px;
-        background: rgba(255,255,255,.75);
-        backdrop-filter: blur(8px);
-      }
-
-      /* Show links when toggled */
-      .navlinks.open{
-        display:flex;
-        flex-direction:column;
-        gap:6px;
-      }
-
-      .navlinks a{
-        width:100%;
-        padding:10px 12px;
-        border-radius:12px;
-      }
-
-      .navlinks a:hover{
-        background: rgba(236,72,153,.08);
-        border-color: transparent;
-      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://wildapierrednp.com/#webpage",
+      "url": "https://wildapierrednp.com/",
+      "name": "Dr. Wilda Pierre | Nursing Education, NCLEX & Mentorship",
+      "isPartOf": {
+        "@id": "https://wildapierrednp.com/#website"
+      },
+      "about": {
+        "@id": "https://wildapierrednp.com/#dr-wilda-pierre"
+      },
+      "inLanguage": "en-US"
     }
-
-    /* HERO */
-    .hero{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:18px;
-      padding:26px;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background: linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.65));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-      position:relative;
-    }
-    .badge{
-      display:inline-flex; gap:8px; align-items:center;
-      font-size:12px; color:var(--muted);
-      padding:7px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      background: rgba(236,72,153,.06);
-      width:fit-content;
-    }
-    .dot{width:8px; height:8px; border-radius:99px; background:var(--accent)}
-    h1{margin:12px 0 8px; font-size:40px; line-height:1.12}
-    .sub{color:var(--muted); font-size:15px; max-width:62ch}
-
-    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
-    .btn{
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.8);
-      color:var(--text);
-      padding:10px 14px;
-      border-radius:12px;
-      text-decoration:none;
-      font-weight:750;
-      font-size:14px;
-      display:inline-flex; align-items:center; gap:10px;
-      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
-    }
-    .btn:hover{transform: translateY(-1px)}
-    .btn.primary{
-      background: linear-gradient(90deg, rgba(236,72,153,1), rgba(236,72,153,.82));
-      border-color: rgba(236,72,153,.45);
-      color:#ffffff;
-      box-shadow: 0 12px 28px rgba(236,72,153,.22);
-    }
-    .btn.primary:hover{box-shadow: 0 16px 34px rgba(236,72,153,.28)}
-    .btn.small{padding:8px 12px; font-size:13px; border-radius:11px}
-
-    .heroCard{
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background: rgba(255,255,255,.75);
-      padding:18px;
-      box-shadow: 0 10px 28px rgba(0,0,0,.06);
-    }
-    .photo{
-      width:100%;
-      aspect-ratio: 4/3;
-      border-radius:14px;
-      border:1px solid rgba(17,24,39,.12);
-      display:flex; align-items:center; justify-content:center;
-      color:rgba(17,24,39,.55);
-      background: linear-gradient(180deg, rgba(236,72,153,.06), rgba(59,130,246,.05));
-      margin-bottom:12px;
-      overflow:hidden;
-    }
-    .photo img{
-      width:100%;
-      height:100%;
-      object-fit:contain; /* correct for scale-down feel */
-      display:block;
-    }
-    .mini{
-      display:grid; gap:10px;
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .pill{
-      font-size:12px;
-      padding:7px 10px;
-      border:1px solid rgba(236,72,153,.35);
-      border-radius:999px;
-      background: rgba(236,72,153,.08);
-      color:#7a1b45;
-    }
-
-    /* SECTIONS */
-    .section{margin-top:22px}
-    .sectionHead{
-      display:flex; align-items:flex-end; justify-content:space-between;
-      gap:12px; margin:0 0 10px;
-      position:relative;
-    }
-    .section h2{margin:0; font-size:18px}
-    .sectionHead::after{
-      content:"";
-      display:block;
-      width:56px;
-      height:4px;
-      margin-top:8px;
-      border-radius:999px;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-    }
-    .kicker{margin:0; color:var(--muted); font-size:13px}
-
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap:14px;
-    }
-    .panel{
-      border:1px solid var(--line);
-      background: var(--card);
-      border-radius:var(--radius);
-      padding:16px;
-      box-shadow: 0 10px 28px rgba(0,0,0,.05);
-    }
-    .panel strong{color:var(--text)}
-    .span-12{grid-column: span 12}
-    .span-8{grid-column: span 8}
-    .span-6{grid-column: span 6}
-    .span-4{grid-column: span 4}
-
-    .panel h3{margin:0 0 6px; font-size:15px}
-    .panel p{margin:0; color:var(--muted); font-size:14px}
-    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
-    li{margin:6px 0}
-
-    .note{
-      margin-top:10px;
-      color:var(--muted);
-      font-size:13px;
-      border-left:3px solid var(--accent);
-      padding:10px 10px 10px 12px;
-      background: rgba(236,72,153,.05);
-      border-radius:12px;
-    }
-
-    /* SOCIAL */
-    .socials{
-      display:flex; flex-wrap:wrap; gap:10px; margin-top:12px;
-    }
-    .iconBtn{
-      text-decoration:none;
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 12px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      background: rgba(255,255,255,.85);
-      color:var(--muted);
-      font-weight:700;
-      font-size:13px;
-      transition: transform .12s ease, background .12s ease, border-color .12s ease;
-    }
-    .iconBtn:hover{
-      transform: translateY(-1px);
-      background: rgba(236,72,153,.06);
-      border-color: rgba(236,72,153,.25);
-      color:var(--text)
-    }
-    .ic{
-      width:28px; height:28px; border-radius:10px;
-      background: rgba(236,72,153,.15);
-      display:inline-flex; align-items:center; justify-content:center;
-      border:1px solid rgba(236,72,153,.22);
-      font-weight:900; color: rgba(17,24,39,.9);
-    }
-
-    /* FOOTER */
-    .footer{
-      margin-top:22px;
-      display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;
-      color:var(--muted);
-      font-size:12px;
-      opacity:.95;
-      border-top:1px solid var(--line);
-      padding-top:16px;
-    }
-
-    /* Responsive */
-    @media (max-width: 920px){
-      .hero{grid-template-columns: 1fr; padding:20px}
-      h1{font-size:34px}
-      .sectionHead{flex-direction:column; align-items:flex-start}
-    }
-    @media (max-width: 680px){
-      .span-8,.span-6,.span-4{grid-column: span 12}
-      .sectionHead{flex-direction:column; align-items:flex-start}
-    }
-  </style>
-</head>
-
-<body>
-  <div class="wrap">
-
-    <!-- NAV -->
-    <div class="nav">
-      <div class="brand">
-        <img
-          src="images/wplogodnparnp.png"
-          alt="Wilda Pierre Medical Education & Clinical Excellence"
-          class="logo">
-      </div>
-
-      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">
-        ☰ Menu
-      </button>
-
-      <div class="navlinks" id="navlinks" aria-label="site navigation">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#engagements">Engagements</a>
-        <a href="#social">Social</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <div>
-        <div class="badge"><span class="dot"></span> Available for speaking, education, and preceptorship</div>
-        <h1>Wilda Pierre, DNP, APRN</h1>
-        <p class="sub">
-          Clinical Educator • Adjunct Professor • Nurse Practitioner • Speaker • Mentor
-          <br/>Evidence-based education that strengthens clinical confidence, leadership, and patient outcomes.
-        </p>
-
-        <div class="cta">
-          <a class="btn primary" href="#contact">Hire Wilda</a>
-          <a class="btn" href="#services">View Services</a>
-          <a class="btn" href="#social">Connect</a>
-        </div>
-
-        <div class="pillrow" aria-label="highlights">
-          <span class="pill">Adult-Gerontology Acute Care NP</span>
-          <span class="pill">Hospital Education & Training</span>
-          <span class="pill">Nursing Faculty</span>
-          <span class="pill">English & Haitian Creole</span>
-        </div>
-      </div>
-
-      <aside class="heroCard">
-        <div class="photo">
-          <img
-            src="images/wilda-clinical-resized.png"
-            alt="Wilda Pierre, DNP, APRN in clinical setting">
-        </div>
-        <div class="mini">
-          <div><b>Primary Focus:</b> Clinical excellence, nursing education, and mentorship.</div>
-          <div><b>Best For:</b> Nursing programs, hospitals, conferences, and 1:1 coaching.</div>
-          <div><b>Location:</b> Miami, Florida (virtual services available)</div>
-        </div>
-      </aside>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="sectionHead">
-        <h2>Meet Wilda Pierre</h2>
-        <p class="kicker">Professional profile • educator-first • patient-centered</p>
-      </div>
-
-      <div class="grid">
-        <div class="panel span-8">
-          <p>
-            Wilda Pierre is a Doctor of Nursing Practice (DNP) and Adult-Gerontology Acute Care Nurse Practitioner (AG-ACNP)
-            with experience in acute and critical care. She supports nurses and advanced practice students through hands-on
-            training, evidence-based instruction, and mentorship designed to strengthen real-world clinical judgment and patient outcomes.
-          </p>
-          <p style="margin-top:10px;">
-            Known for clear teaching, practical frameworks, and a supportive coaching style, Wilda partners with nursing
-            programs, hospitals, and organizations seeking high-impact education and professional development.
-          </p>
-
-          <div class="note">
-            <b>Languages:</b> English • Haitian Creole • Spanish (conversational understanding)
-          </div>
-        </div>
-
-        <div class="panel span-4">
-          <h3>Quick Snapshot</h3>
-          <ul>
-            <li>Clinical educator & hospital trainer</li>
-            <li>Adjunct nursing faculty</li>
-            <li>NP preceptorship & clinical supervision</li>
-            <li>Speaker for conferences and workshops</li>
-            <li>Mentorship for RN → APRN transitions</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services">
-      <div class="sectionHead">
-        <h2>Services</h2>
-        <p class="kicker">Clear offerings • easy booking • strong outcomes</p>
-      </div>
-
-      <div class="grid">
-        <div class="panel span-6">
-          <h3>🏥 Clinical Educator</h3>
-          <p>Education and training programs that elevate clinical competency and consistency.</p>
-          <ul>
-            <li>Staff education & onboarding support</li>
-            <li>Competency training & skills validation</li>
-            <li>Evidence-based practice workshops</li>
-            <li>Interdisciplinary communication training</li>
-          </ul>
-        </div>
-
-        <div class="panel span-6">
-          <h3>🎓 Adjunct Professor</h3>
-          <p>Faculty support for nursing programs with lecture and clinical instruction.</p>
-          <ul>
-            <li>BSN/MSN/DNP instruction (course-based)</li>
-            <li>Clinical supervision and student evaluation</li>
-            <li>Curriculum development support</li>
-            <li>Academic mentorship & advising</li>
-          </ul>
-        </div>
-
-        <div class="panel span-6">
-          <h3>📝 Clinical Preceptor</h3>
-          <p>NP clinical hour supervision and competency sign-off (program dependent).</p>
-          <ul>
-            <li>NP clinical supervision (AG-ACNP aligned)</li>
-            <li>Structured feedback & professional development</li>
-            <li>Competency sign-off and documentation support</li>
-            <li>Transition-to-practice guidance</li>
-          </ul>
-        </div>
-
-        <div class="panel span-6">
-          <h3>🎤 Speaker & Presenter</h3>
-          <p>High-impact talks and workshops for education, leadership, and resilience.</p>
-          <ul>
-            <li>RN → NP transition & professional identity</li>
-            <li>Clinical judgment in acute care</li>
-            <li>Leadership development for nurses</li>
-            <li>Burnout prevention & resilience</li>
-          </ul>
-        </div>
-
-        <div class="panel span-12">
-          <h3>🤝 Coaching & Mentorship</h3>
-          <p>1:1 or small-group mentorship for nurses and NP students seeking direction and confidence.</p>
-          <ul>
-            <li>RN → APRN transition coaching</li>
-            <li>New NP transition-to-practice support</li>
-            <li>Professional development planning</li>
-            <li>Interview readiness & goal setting (nursing-focused)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHO SHE SERVES -->
-    <section class="section" id="audience">
-      <div class="sectionHead">
-        <h2>Who Wilda Works With</h2>
-        <p class="kicker">Schools • hospitals • organizations • individuals</p>
-      </div>
-
-      <div class="grid">
-        <div class="panel span-4">
-          <h3>🏫 Nursing Programs</h3>
-          <p>Adjunct teaching, clinical instruction, curriculum support, student mentorship.</p>
-        </div>
-        <div class="panel span-4">
-          <h3>🏥 Hospitals & Health Systems</h3>
-          <p>Orientation, competency development, workshops, and staff training.</p>
-        </div>
-        <div class="panel span-4">
-          <h3>👩🏾‍⚕️ Nurses & NP Students</h3>
-          <p>Mentorship, coaching, and transition-to-practice guidance.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ENGAGEMENTS -->
-    <section class="section" id="engagements">
-      <div class="sectionHead">
-        <h2>Engagements & Professional Inquiries</h2>
-        <p class="kicker">Customized based on scope, audience, and format</p>
-      </div>
-
-      <div class="grid">
-        <div class="panel span-6">
-          <h3>How Engagements Are Structured</h3>
-          <p class="kicker">
-            Services are tailored to meet the needs of institutions, organizations, and individuals. Pricing is discussed
-            after a brief consultation to ensure alignment, clarity, and value.
-          </p>
-
-          <ul>
-            <li>Speaking engagements & workshops</li>
-            <li>Clinical educator consulting & training</li>
-            <li>NP preceptorship & clinical supervision</li>
-            <li>Coaching & professional mentorship</li>
-          </ul>
-
-          <div class="note">
-            Quotes are based on preparation time, format (virtual/in-person), audience size, and timeline.
-          </div>
-        </div>
-
-        <div class="panel span-6">
-          <h3>Contact to Inquire</h3>
-          <p class="kicker">
-            To receive a quote, please include the following details:
-          </p>
-
-          <ul>
-            <li>Service requested</li>
-            <li>Date(s) and time frame</li>
-            <li>Location (in-person or virtual)</li>
-            <li>Audience type and size</li>
-            <li>Topic or learning objectives</li>
-          </ul>
-
-          <div class="cta" style="margin-top:14px;">
-            <a class="btn primary"
-               href="mailto:wildapierrednp@gmail.com?subject=Professional%20Inquiry%20-%20Wilda%20Pierre&body=Hello%20Wilda%2C%0D%0A%0D%0AI%E2%80%99d%20like%20to%20inquire%20about%20your%20services.%0D%0A%0D%0AService%20requested%3A%0D%0ADate(s)%3A%0D%0ALocation%20(in-person%20or%20virtual)%3A%0D%0AAudience%20type%2Fsize%3A%0D%0ATopic%20or%20objectives%3A%0D%0A%0D%0AThank%20you%2C">
-              Contact for Quote
-            </a>
-            <a class="btn" href="#contact">Fast Booking</a>
-          </div>
-        </div>
-
-        <div class="panel span-12">
-          <h3>Community & Student Support</h3>
-          <p class="kicker">
-            Select student-focused and mission-aligned opportunities may be considered based on impact, fit, and availability.
-          </p>
-          <div class="cta" style="margin-top:14px;">
-            <a class="btn primary" href="#contact">Request Consideration</a>
-            <a class="btn" href="#services">Compare Services</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOCIAL -->
-    <section class="section" id="social">
-      <div class="sectionHead">
-        <h2>Connect & Follow</h2>
-        <p class="kicker">Add your official links once handles are secured</p>
-      </div>
-
-      <div class="panel">
-        <p class="kicker" style="margin:0 0 10px;">
-          Professional insights, nursing education, leadership, and mentorship.
-        </p>
-
-        <div class="socials">
-          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">in</span> LinkedIn</a>
-          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">IG</span> Instagram</a>
-          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">FB</span> Facebook</a>
-          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">TT</span> TikTok</a>
-          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="ic">YT</span> YouTube</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="sectionHead">
-        <h2>Let’s Work Together</h2>
-        <p class="kicker">Fast inquiries • clear next steps</p>
-      </div>
-
-      <div class="grid">
-        <div class="panel span-8">
-          <h3>Request booking or information</h3>
-          <p>
-            Use the button below to email your request (include date, location/virtual, audience size, and topic).
-          </p>
-
-          <div class="cta" style="margin-top:14px;">
-            <a class="btn primary"
-               href="mailto:wildapierrednp@gmail.com?subject=Inquiry%20for%20Wilda%20Pierre%20(Booking)%20&body=Hello%20Wilda%2C%0D%0A%0D%0AI%E2%80%99d%20like%20to%20inquire%20about%3A%0D%0A-%20Service%20requested%3A%20%0D%0A-%20Preferred%20date%2Ftime%3A%20%0D%0A-%20Location%20(or%20virtual)%3A%20%0D%0A-%20Audience%20type%2Fsize%3A%20%0D%0A-%20Topic%20focus%3A%20%0D%0A%0D%0AThank%20you%2C%0D%0A">
-              Email to Book
-            </a>
-
-            <a
-  class="btn"
-  href="https://calendly.com/wildapierrednp"
-  target="_blank"
-  rel="noopener">
-  Schedule (Calendly)
-</a>
-          </div>
-
-          <div class="note" style="margin-top:14px;">
-            <b>Tip:</b> Add a Calendly link here (and on LinkedIn) to reduce back-and-forth.
-          </div>
-        </div>
-
-        <div class="panel span-4">
-          <h3>Words That Guide the Work</h3>
-          <p class="kicker">Faith • Purpose • Healing</p>
-
-          <p style="margin-top:12px; font-size:15px; font-weight:700; line-height:1.6;">
-            “For I know the plans I have for you,” declares the Lord,  
-            “plans to prosper you and not to harm you,  
-            plans to give you hope and a future.”
-          </p>
-
-          <p style="margin-top:8px; font-size:13px; font-style:italic; color:var(--muted);">
-            — Jeremiah 29:11 (NIV)
-          </p>
-
-          <div class="note" style="margin-top:14px;">
-            A reminder that healing is both a profession and a calling — grounded in faith, compassion,
-            and purposeful service.
-            <a href="medical-education.html">Medical Education & Clinical Training</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <div class="footer">
-      <div>© <span id="year"></span> Wilda Pierre • Miami, FL</div>
-      <div>
-        <a href="#top" style="text-decoration:none; border-bottom:1px dashed var(--line);">Back to top ↑</a>
-      </div>
-    </div>
-
-  </div>
-
-  <script>
-    <p style="display:none;">
-Medical education and clinical training services based in Miami, Florida.
-</p>
-    // Footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Mobile menu toggle
-    const menuBtn = document.getElementById("menuBtn");
-    const navlinks = document.getElementById("navlinks");
-
-    menuBtn.addEventListener("click", () => {
-      const open = navlinks.classList.toggle("open");
-      menuBtn.setAttribute("aria-expanded", String(open));
-    });
-
-    // Close menu after tapping a link (mobile)
-    navlinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navlinks.classList.remove("open");
-        menuBtn.setAttribute("aria-expanded", "false");
-      });
-    });
+  ]
+}
   </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Dr. Wilda Pierre, home"><img src="images/wp-medallion.jpg" width="72" height="72" alt="WP — Teach, Lead, Heal"><span>DR. WILDA PIERRE<small>EDUCATION · EXCELLENCE · PURPOSE</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" aria-label="Main navigation"><a href="#about">Her story</a><a href="#services">Services</a><a href="#nclex">NCLEX</a><a href="#speaking">Speaking</a><a class="nav-cta" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero container" id="top" aria-labelledby="hero-heading">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="gold-rule"></span> COMPASSION MEETS CLINICAL EXCELLENCE</p>
+      <h1 id="hero-heading">Teach with purpose.<br>Lead with heart.<br><em>Heal with care.</em></h1>
+      <p class="hero-name">Dr. Wilda Pierre <span>DNP, APRN, ACNPC-AG</span></p>
+      <p class="hero-role">Adult-Gerontology Acute Care Nurse Practitioner<br>Clinical Educator · Nursing Faculty · Speaker · Mentor</p>
+      <p class="hero-intro">Helping nurses find their confidence, strengthen their clinical judgment, and become the professionals they are called to be.</p>
+      <div class="button-row"><a class="button" href="#services">Explore services <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">Meet Dr. Pierre <span aria-hidden="true">→</span></a></div>
+      <p class="location">MIAMI, FLORIDA <span>•</span> VIRTUAL CONNECTIONS, TOO</p>
+    </div>
+    <div class="hero-visual">
+      <figure class="portrait"><img src="images/dr-wilda-pierre-portrait.jpg" width="1121" height="1403" fetchpriority="high" alt="Dr. Wilda Pierre smiling in a white coat and pink scrubs"></figure>
+      <div class="portrait-note"><span class="note-star" aria-hidden="true">✦</span><span>Rooted in community.<br><strong>Committed to your growth.</strong></span></div>
+    </div>
+  </section>
+  <div class="audience-strip"><div class="container"><span>FOR THE NEXT CHAPTER IN NURSING</span><p>Students <b>✦</b> Nurses <b>✦</b> Educators <b>✦</b> Healthcare organizations</p></div></div>
+  <section class="section container story" id="about" aria-labelledby="about-heading">
+    <div class="story-heading"><p class="eyebrow">01 / THE PERSON BEHIND THE PRACTICE</p><h2 id="about-heading">Rooted in community.<br>Called to care.<br><em>Committed to lifting others.</em></h2><img class="story-seal" src="images/wp-medallion.jpg" width="190" height="190" loading="lazy" alt="Dr. Pierre’s pink and gold WP medallion: Teach, Lead, Heal"></div>
+    <div class="story-copy"><p class="lead">For Dr. Pierre, nursing begins with seeing the person in front of you—and believing in what they can become.</p><p>Her Haitian roots and deep connection to community shape the way she cares, teaches, and leads. Compassion, faith, and service are part of the purpose she brings to her work: helping people feel seen, supported, and capable of taking their next step.</p><p>Dr. Wilda Pierre, DNP, APRN, ACNPC-AG, is an advanced practice registered nurse, clinical educator, and nursing faculty member. Her journey has taken her from acute care nursing to clinical leadership, nursing education, and advanced practice, with experience in emergency, medical-surgical, critical care, orthopedic, geriatric, and nephrology settings.</p><p>She brings that experience into every learning relationship, helping nurses connect what they know with how they care. Whether a student is preparing for the NCLEX or a nurse is finding their footing in practice, Dr. Pierre’s focus is the same: stronger clinical judgment, greater confidence, and compassionate nursing practice.</p><a class="text-link" href="#credentials">Explore her education & experience <span aria-hidden="true">→</span></a></div>
+  </section>
+  <section class="philosophy container" aria-label="Dr. Pierre’s philosophy of nursing"><article><span>01</span><h3>Teach.</h3><p>Equip current and future nurses with knowledge, clinical reasoning, and practical skills.</p></article><article><span>02</span><h3>Lead.</h3><p>Develop professionals ready to lead with competence, integrity, and purpose.</p></article><article><span>03</span><h3>Heal.</h3><p>Keep compassionate, patient-centered care at the heart of nursing practice.</p></article></section>
+  <section class="section services" id="services" aria-labelledby="services-heading"><div class="container">
+    <div class="section-heading"><div><p class="eyebrow">02 / EDUCATION THAT MOVES YOU FORWARD</p><h2 id="services-heading">Your next chapter.<br><em>Supported with purpose.</em></h2></div><p>From the first steps of nursing school to leading a team, find guidance grounded in practice and shaped around your goals.</p></div>
+    <div class="service-grid">
+      <a class="service-card" href="#nclex"><span class="service-index">01 <span aria-hidden="true">↗</span></span><h3>NCLEX preparation</h3><p>Individualized and group support for clinical judgment, study planning, test-taking strategies, and exam readiness.</p><span class="service-link">Build your study plan</span></a>
+      <a class="service-card" href="#contact"><span class="service-index">02 <span aria-hidden="true">↗</span></span><h3>Student mentorship</h3><p>A supportive space to strengthen clinical reasoning, study strategies, confidence, and professional readiness.</p><span class="service-link">Find your direction</span></a>
+      <a class="service-card" href="#clinical"><span class="service-index">03 <span aria-hidden="true">↗</span></span><h3>Clinical education</h3><p>Learning experiences and workshops connecting evidence-based knowledge with clinical judgment and nursing practice.</p><span class="service-link">Connect knowledge to care</span></a>
+      <a class="service-card" href="#clinical"><span class="service-index">04 <span aria-hidden="true">↗</span></span><h3>Preceptorship & skills validation</h3><p>Clinical instruction, mentorship, and evaluation of clinical skills in accordance with program and clinical-site requirements.</p><span class="service-link">Explore clinical learning</span></a>
+      <a class="service-card" href="#contact"><span class="service-index">05 <span aria-hidden="true">↗</span></span><h3>Leadership & faculty development</h3><p>Support for nurses and educators building leadership, communication, mentorship, and educational practice.</p><span class="service-link">Grow as a leader</span></a>
+      <a class="service-card" href="#speaking"><span class="service-index">06 <span aria-hidden="true">↗</span></span><h3>Speaking & workshops</h3><p>Thoughtful conversations about nursing education, professional confidence, mentorship, and transition to practice.</p><span class="service-link">Start a conversation</span></a>
+    </div>
+  </div></section>
+  <section class="section container" id="nclex" aria-labelledby="nclex-heading"><div class="nclex-panel">
+    <div><p class="eyebrow">03 / NCLEX PREPARATION</p><h2 id="nclex-heading">Prepare with a plan.<br><em>Move forward with confidence.</em></h2><p class="lead">Dr. Pierre has demonstrated success in supporting nursing students preparing for and successfully passing the NCLEX examination.</p><p>She provides individualized and group-based preparation to help nursing graduates strengthen clinical knowledge, clinical judgment, test-taking strategies, and confidence.</p><a class="button" href="mailto:wildapierrednp@gmail.com?subject=NCLEX%20Preparation%20Inquiry">Ask about NCLEX support <span aria-hidden="true">↗</span></a></div>
+    <div class="nclex-details"><p class="eyebrow">A THOUGHTFUL APPROACH TO READINESS</p><ul class="numbered-list"><li><span>01</span><div><h3>Understand your starting point</h3><p>Identify knowledge gaps and create an individualized study plan.</p></div></li><li><span>02</span><div><h3>Strengthen your clinical judgment</h3><p>Review nursing content, prioritization, and Next Generation NCLEX-style questions.</p></div></li><li><span>03</span><div><h3>Practice with intention</h3><p>Develop test-taking strategies, accountability, and exam-readiness habits.</p></div></li></ul><p class="fine-print">NCLEX preparation is educational. Individual results vary; participation does not guarantee examination success or licensure.</p></div>
+  </div></section>
+  <section class="section clinical" id="clinical" aria-labelledby="clinical-heading"><div class="container">
+    <div class="section-heading"><div><p class="eyebrow">04 / CLINICAL EDUCATION & PRECEPTORSHIP</p><h2 id="clinical-heading">From knowing.<br><em>To understanding why.</em></h2></div><div><p class="scope-note">Clinical education and preceptorship services are subject to applicable academic-program, institutional, clinical-site, licensure, and regulatory requirements.</p><p>Dr. Pierre uses the nursing process as a framework for developing clinical judgment. Through instruction, mentorship, and skills validation, learners connect nursing knowledge to thoughtful, patient-centered practice.</p></div></div>
+    <ol class="process"><li><span>01</span><h3>Assess</h3><p>Understand patient needs.</p></li><li><span>02</span><h3>Diagnose</h3><p>Identify nursing priorities.</p></li><li><span>03</span><h3>Plan</h3><p>Develop a plan of care.</p></li><li><span>04</span><h3>Implement</h3><p>Put nursing interventions into practice.</p></li><li><span>05</span><h3>Evaluate</h3><p>Reflect on outcomes and adjust.</p></li></ol>
+    <p class="clinical-closing">The goal extends beyond clinical hours: stronger judgment, professional confidence, and readiness for nursing practice.</p>
+  </div></section>
+  <section class="section container speaking" id="speaking" aria-labelledby="speaking-heading"><div><p class="eyebrow">05 / SPEAKING & WORKSHOPS</p><h2 id="speaking-heading">Bring Dr. Pierre<br><em>into the conversation.</em></h2><p>Invite an educator who connects clinical experience with compassion, purpose, and the realities of nursing practice.</p><p>Available for nursing programs, healthcare organizations, conferences, professional-development programs, workshops, and nursing-student events.</p><a class="button" href="mailto:wildapierrednp@gmail.com?subject=Speaking%20Engagement%20Inquiry">Invite Dr. Pierre to speak <span aria-hidden="true">↗</span></a></div><div class="topics"><p class="eyebrow">CONVERSATIONS THAT MATTER</p><ul><li>Clinical judgment & evidence-based nursing</li><li>Transition to practice</li><li>NCLEX preparation & student success</li><li>Clinical leadership & nursing mentorship</li><li>Professional confidence & career development</li><li>Teaching the next generation of nurses</li></ul></div></section>
+  <section class="section credentials" id="credentials" aria-labelledby="credentials-heading"><div class="container credentials-grid"><div><p class="eyebrow">06 / A FOUNDATION OF EXPERIENCE</p><h2 id="credentials-heading">Lifelong learning.<br><em>Purposeful practice.</em></h2><p class="credentials-intro">Dr. Pierre’s experience spans advanced practice, clinical education, and nursing faculty roles.</p><p class="roles">Nephrology Nurse Practitioner<br>Clinical Educator<br>Adjunct Nursing Instructor<br>Orthopedic Nurse Clinician<br>Registered Nurse</p></div><div class="education-list"><article><span>DOCTORAL EDUCATION</span><h3>Doctor of Nursing Practice</h3><p>Capella University</p></article><article><span>POST-MASTER’S EDUCATION</span><h3>Adult-Gerontology Acute Care Nurse Practitioner Certificate</h3><p>Walden University</p></article><article><span>GRADUATE EDUCATION</span><h3>MSN, Leadership & Administration</h3><p>Capella University</p></article><article><span>UNDERGRADUATE EDUCATION</span><h3>Bachelor of Science in Nursing</h3><p>Grand Canyon University</p></article></div></div></section>
+  <section class="section container" id="contact" aria-labelledby="contact-heading"><div class="contact-panel"><div><p class="eyebrow">07 / LET’S TAKE THE NEXT STEP</p><h2 id="contact-heading">Your goals.<br>Her guidance.<br><em>A meaningful next step.</em></h2><p>Preparing for the NCLEX, seeking mentorship, or planning an educational event? Connect with Dr. Pierre to discuss what you need and what support could look like.</p><a class="contact-email" href="mailto:wildapierrednp@gmail.com">wildapierrednp@gmail.com <span aria-hidden="true">↗</span></a></div><div class="booking"><span class="booking-icon" aria-hidden="true">↗</span><h3>Let’s find a time to connect.</h3><p>Explore available appointment times, or send an inquiry with the service you’re interested in, your goals, and your preferred dates.</p><a class="button light" data-booking-link href="https://calendly.com/wildapierrednp" target="_blank" rel="noopener noreferrer">View scheduling options <span aria-hidden="true">↗</span></a><a class="booking-email" href="mailto:wildapierrednp@gmail.com?subject=Education%20and%20Mentorship%20Inquiry">Prefer email? Send an inquiry →</a><p class="fine-print">Scheduling opens in Calendly. Fees, availability, and engagement details are discussed directly.</p></div></div></section>
+  <section class="social-section container" id="social" aria-labelledby="social-heading"><div><p class="eyebrow">STAY CONNECTED</p><h2 id="social-heading">Beyond the classroom.</h2><p>Follow Dr. Pierre’s official social profiles.</p></div><div class="social-links">
+    <a href="https://www.linkedin.com/in/wildapierrednp/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" fill="currentColor"/><path d="M7 10v7m4 0v-7m0 3c0-4 6-4 6 0v4" fill="none" stroke="white" stroke-width="2"/><circle cx="7" cy="7" r="1.1" fill="white"/></svg>LinkedIn <span aria-hidden="true">↗</span></a>
+    <a href="https://www.instagram.com/childofgod2004/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>Instagram <span aria-hidden="true">↗</span></a>
+    <a href="https://www.facebook.com/share/1DMZ7DeaRK/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M14 5h-2c-2 0-3 1-3 3v13h4V13h3l.5-3H13V8c0-.5.3-1 1-1h2V5z" fill="white"/></svg>Facebook <span aria-hidden="true">↗</span></a>
+    <a href="https://www.tiktok.com/@childofgod2004" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v12a5 5 0 1 1-5-5v3a2 2 0 1 0 2 2V3h3c0 3 2 5 5 5v3c-2 0-4-1-5-2" fill="currentColor"/></svg>TikTok <span aria-hidden="true">↗</span></a>
+  </div></section>
+  <section class="disclaimer container" aria-labelledby="disclaimer-heading"><h2 id="disclaimer-heading">Professional information</h2><p>The educational, mentoring, speaking, and professional-development content provided through this website is intended for educational purposes and does not constitute individualized medical advice, diagnosis, or treatment.</p><p>Clinical education and preceptorship services are subject to applicable academic-program, institutional, clinical-site, licensure, and regulatory requirements. NCLEX preparation services are educational in nature. Individual examination results vary, and participation does not guarantee successful completion of the NCLEX or professional licensure.</p></section>
+
+</main>
+<footer class="site-footer"><div class="container footer-bottom"><p>© <span id="year">2026</span> Dr. Wilda Pierre. All rights reserved.</p><p>Website by Corporate Lens Photography</p><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
