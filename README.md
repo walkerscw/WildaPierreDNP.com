@@ -34,7 +34,7 @@ This is a static HTML/CSS/JavaScript website. It needs no package installation, 
 | `script.js` | Accessible mobile menu and automatic copyright year |
 | `images/dr-wilda-pierre-portrait.jpg` | Supplied updated portrait |
 | `images/wp-medallion.jpg` | Supplied pink and gold WP medallion |
-| `images/wplogodnparnp.png` | Preserved original image used by existing social-preview metadata |
+| `images/wplogodnparnp.png` | Preserved legacy logo (no longer used for sharing previews) |
 | `images/wilda-clinical-resized.png` | Preserved legacy portrait |
 | `medical-education.html` | Compatibility redirect from the previous page to `/#clinical` |
 | `CNAME` | Existing custom domain: `wildapierrednp.com` |
@@ -97,7 +97,7 @@ Implemented:
 - HTTPS canonical URL and sitemap.
 - Crawlable content in the HTML, not dependent on JavaScript rendering.
 - `Person`, `WebSite`, and `WebPage` JSON-LD describing Dr. Pierre and linking her official profiles.
-- Existing Open Graph image preserved, with updated title, description, URL, and alternate text.
+- Open Graph and Twitter sharing metadata use the new pink-and-gold medallion, current title and description, image dimensions, and alternate text.
 - Semantic page sections, descriptive image alternative text, and responsive presentation.
 - A redirect for the former medical-education page to consolidate visitors on the updated homepage.
 
@@ -107,7 +107,7 @@ Owner follow-up:
 
 1. Verify the domain in Google Search Console and Bing Webmaster Tools, then submit `https://wildapierrednp.com/sitemap.xml`.
 2. Keep credentials, service descriptions, and official profile links consistent across the website and social profiles.
-3. When a new social-sharing image is approved, replace the legacy Open Graph image reference in `index.html`.
+3. Sharing previews use `images/wp-medallion.jpg`. To use a future portrait/medallion combination, update both `og:image` and `twitter:image`, their alternate text, and dimensions. These metadata tags do not add an image to the visible page. Messaging apps may retain older previews; previously sent messages may not refresh.
 4. Confirm HTTPS enforcement in GitHub Pages after the domain’s certificate/DNS checks are complete. This refresh does not change those settings.
 
 ## Corporate Lens Photography
