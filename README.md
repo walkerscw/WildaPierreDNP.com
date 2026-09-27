@@ -1,6 +1,6 @@
 # Dr. Wilda Pierre — Teach. Lead. Heal.
 
-Professional website for **Dr. Wilda Pierre, DNP, APRN, ACNPC-AG**, Adult-Gerontology Acute Care Nurse Practitioner, clinical educator, nursing faculty member, speaker, and mentor.
+Professional website for **Wilda Pierre, DNP, APRN, ACNPC-AG**, Adult-Gerontology Acute Care Nurse Practitioner, clinical educator, nursing faculty member, speaker, and mentor.
 
 **Live website:** https://wildapierrednp.com/
 **Repository:** https://github.com/walkerscw/WildaPierreDNP.com
@@ -67,7 +67,7 @@ To restore an earlier version, revert the specific refresh commit in GitHub or G
 
 The refresh follows the Dr. Wright-reviewed content and the project’s approved direction:
 
-- Use **Dr. Pierre** after her full introduction.
+- Introduce her as **Wilda Pierre, DNP, APRN, ACNPC-AG**, without a “Dr.” prefix. Use **Dr. Pierre** for later references, without repeating credentials. Never combine the “Dr.” prefix and credential suffixes in one title.
 - Use **acute care nursing**, **skills validation**, and **transition to practice**.
 - Explain clinical learning with the nursing-process framework.
 - Retain educational, examination-result, and preceptorship limitations.
